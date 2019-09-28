@@ -3,4 +3,8 @@
     <string name="app_name">assignment1</string>
     <string name="hello_message">Namaste!</string>
     <string name="ButtonText">Main Button Hoon!</string>
+    <string name="log">Login kare</string>
+    <string name="pass">Sanketik chinha</string>
+    <string name="loginhint">Login naam </string>
+    <string name="switches">Isase kya hota hai?</string>
 </resources>
