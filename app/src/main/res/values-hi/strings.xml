@@ -7,4 +7,11 @@
     <string name="pass">Sanketik chinha</string>
     <string name="loginhint">Login naam </string>
     <string name="switches">Isase kya hota hai?</string>
+    <string name="swi">Switch chalu hai</string>
+    <string name="swii">Switch band hai</string>
+    <string name="dialog_message">kya apko bahar padna hai?</string>
+    <string name="respon">Yaha meri pratikriya hai</string>
+    <string name="dialog_title">Bahar pado</string>
+    <string name="ok">Thik hai</string>
+    <string name="cancel">Rudd karo</string>
 </resources>

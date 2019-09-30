@@ -6,4 +6,11 @@
     <string name="pass">Password</string>
     <string name="loginhint">Login name </string>
     <string name="switches">What does this do?</string>
+    <string name="swi">Switch is on</string>
+    <string name="swii">Switch is off</string>
+    <string name="dialog_message">Do you want to exit?</string>
+    <string name="respon">Here is my response</string>
+    <string name="dialog_title">Exit</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
 </resources>

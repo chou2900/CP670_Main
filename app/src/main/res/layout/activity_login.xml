@@ -9,26 +9,36 @@
 
     tools:context=".LoginActivity">
 <TextView
+    android:id="@+id/textView2"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/log"/>
 
 
     <EditText
+        android:id="@+id/edit_text1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/loginhint"
         android:inputType="textEmailAddress" />
 
     <TextView
+        android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="37dp"
         android:text="@string/pass" />
 
     <EditText
+        android:id="@+id/edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Save"
+        android:text="@string/log" />
 
 </LinearLayout>

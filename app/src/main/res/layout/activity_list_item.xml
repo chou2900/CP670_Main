@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="fill"
         android:layout_columnWeight="1"
+        android:onClick="addListenerOnChkIos"
         android:text="CheckBox" />
 
     <Switch
@@ -31,6 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="fill"
         android:layout_columnWeight="1"
+        android:onClick="onSwitchClicked"
         android:text="@string/switches" />
 
     <ImageButton
@@ -39,6 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="fill"
         android:layout_columnWeight="1"
+
         app:srcCompat="@android:drawable/ic_menu_camera" />
 
 </GridLayout>
