@@ -9,34 +9,57 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.Assignment2.TestToolbar;
 
-    protected static final String ACTIVITY_NAME = "MainActivity";
-    Button button;
+public class StartActivity extends AppCompatActivity {
+
+    protected static final String ACTIVITY_NAME = "StartActivity";
+    Button button,button2,button3;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_start);
         Log.i(ACTIVITY_NAME, "In onCreate()");
         button = (Button) findViewById(R.id.button);
-
+        button2= (Button)  findViewById(R.id.button2);
+        button3= (Button)findViewById(R.id.button3);
         button.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                Intent intent = new Intent(MainActivity.this, ListItemActivity.class);
+                Intent intent = new Intent(StartActivity.this, ListItemActivity.class);
                 startActivityForResult(intent, 10);
             }
         });
+
+        button2.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick (View arg0){
+               Intent intent = new Intent(StartActivity.this, ChatWindow.class);
+               startActivity(intent);
+            }
+        });
+
+        button3.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick (View arg0){
+                Intent intent = new Intent(StartActivity.this,  TestToolbar.class);
+                startActivity(intent);
+            }
+        });
+
     }
+
+
+
     @Override
     protected void onActivityResult(int requestCode, int responseCode, Intent data) {
         super.onActivityResult(requestCode, responseCode, data);
         // check if the request code is same as what is passed  here it is 2
         if(requestCode==10 & responseCode==RESULT_OK)
         {
-            Log.i(ACTIVITY_NAME, "Returned to MainActivity.onActivityResult");
+            Log.i(ACTIVITY_NAME, "Returned to StartActivity.onActivityResult");
             String messagePassed = data.getStringExtra("Response");
             int duration = Toast.LENGTH_LONG;
             Toast toast = Toast.makeText(this , "ListItemsActivity passed:" + messagePassed, duration);

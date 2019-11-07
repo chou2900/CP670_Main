@@ -13,4 +13,11 @@
     <string name="dialog_title">Exit</string>
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
+    <string name="Buttonschat">Start chat</string>
+    <string name="message">enter message </string>
+    <string name="sendmsg">send </string>
+    <string name="txview">TextView </string>
+    <string name="title_activity_test_toolbar">TestToolbar</string>
+    <string name="versionname">Version 1.0,by Choudhari Ashwini</string>
+    <string name="usertext">Enter text</string>
 </resources>

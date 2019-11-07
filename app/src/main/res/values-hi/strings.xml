@@ -14,4 +14,11 @@
     <string name="dialog_title">Bahar pado</string>
     <string name="ok">Thik hai</string>
     <string name="cancel">Rudd karo</string>
+    <string name="Buttonschat">Batchit suru kare </string>
+    <string name="message">Sandesh likho </string>
+    <string name="sendmsg">Bhejo </string>
+    <string name="txview">Sandesh pati </string>
+    <string name="title_activity_test_toolbar">TestToolbar</string>
+    <string name="versionname">Version 1.0 Ashwini Choudhari se</string>
+    <string name="usertext">Likhiye</string>
 </resources>

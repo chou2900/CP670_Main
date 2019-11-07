@@ -13,7 +13,7 @@ import android.widget.EditText;
 
 public class LoginActivity extends AppCompatActivity {
     protected static final String ACTIVITY_NAME = "LoginActivity";
-    TextView email;
+    EditText email;
     public static final String Email = "emailKey";
     public static final String file = "mypref";
     SharedPreferences sharedpreferences;
@@ -24,7 +24,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        email = (TextView) findViewById(R.id.edit_text1);
+        email = (EditText) findViewById(R.id.edit_text1);
         sharedpreferences = getSharedPreferences(file, Context.MODE_PRIVATE);
         email.setText(sharedpreferences.getString(Email, "email@domain.com"));
         Log.i(ACTIVITY_NAME, "In onCreate()");
@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
         SharedPreferences.Editor editor = sharedpreferences.edit();
         editor.putString(Email, e);
         editor.commit();
-        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+        Intent intent = new Intent(LoginActivity.this, StartActivity.class);
         startActivity(intent);
     }
 
