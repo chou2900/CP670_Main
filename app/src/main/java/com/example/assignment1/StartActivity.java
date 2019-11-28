@@ -14,7 +14,7 @@ import com.example.Assignment2.TestToolbar;
 public class StartActivity extends AppCompatActivity {
 
     protected static final String ACTIVITY_NAME = "StartActivity";
-    Button button,button2,button3;
+    Button button,button2,button3, button4;
 
 
     @Override
@@ -25,6 +25,7 @@ public class StartActivity extends AppCompatActivity {
         button = (Button) findViewById(R.id.button);
         button2= (Button)  findViewById(R.id.button2);
         button3= (Button)findViewById(R.id.button3);
+        button4= (Button)findViewById(R.id.button4);
         button.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View arg0) {
@@ -44,8 +45,16 @@ public class StartActivity extends AppCompatActivity {
         button3.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick (View arg0){
-                Intent intent = new Intent(StartActivity.this,  TestToolbar.class);
+                Intent intent = new Intent(StartActivity.this, TestToolbar.class);
                 startActivity(intent);
+            }
+        });
+
+        button4.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(StartActivity.this, WeatherForecast.class);
+                startActivityForResult(intent, 10);
             }
         });
 
